@@ -1,4 +1,6 @@
 # Simple Vocabulary React App
+<p>https://kwakhyun.github.io/simple-voca-app/</p>
+
 이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app)으로 부트스트랩되었습니다.
 
 ## Available Scripts
