@@ -1,92 +1,85 @@
 {
-    "navs": [
-        {
-            "id": 1,
-            "nav": 1
-        },
-        {
-            "id": 2,
-            "nav": 2
-        },
-        {
-            "id": 3,
-            "nav": 3
-        },
-        {
-            "nav": 4,
-            "id": 4
-        }
-    ],
-    "words": [
-        {
-            "id": 1,
-            "nav": 1,
-            "eng": "account",
-            "kor": "계산",
-            "isDone": false
-        },
-        {
-            "id": 3,
-            "nav": 2,
-            "eng": "account for",
-            "kor": "~를 설명하다",
-            "isDone": false
-        },
-        {
-            "id": 5,
-            "nav": 3,
-            "eng": "benefit from",
-            "kor": "~로부터 혜택을 받다",
-            "isDone": false
-        },
-        {
-            "id": 6,
-            "nav": 3,
-            "eng": "condense",
-            "kor": "압축하다",
-            "isDone": false
-        },
-        {
-            "id": 7,
-            "nav": "3",
-            "eng": "condense into",
-            "kor": "~로 압축하다",
-            "isDone": false
-        },
-        {
-            "id": 8,
-            "nav": "3",
-            "eng": "better",
-            "kor": "~를 개선하다",
-            "isDone": false
-        },
-        {
-            "id": 9,
-            "nav": "2",
-            "eng": "conduct",
-            "kor": "실시, 시행하다",
-            "isDone": false
-        },
-        {
-            "id": 10,
-            "nav": "4",
-            "eng": "accrue",
-            "kor": "생기다, 얻어지다",
-            "isDone": false
-        },
-        {
-            "id": 11,
-            "nav": "4",
-            "eng": "apple",
-            "kor": "사과",
-            "isDone": false
-        },
-        {
-            "id": 12,
-            "nav": "3",
-            "eng": "conductor",
-            "kor": "지휘자 , 차장",
-            "isDone": false
-        }
-    ]
+  "navs": [
+    {
+      "id": 1,
+      "nav": 1
+    },
+    {
+      "id": 2,
+      "nav": 2
+    },
+    {
+      "id": 3,
+      "nav": 3
+    },
+    {
+      "nav": 4,
+      "id": 4
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "nav": 1,
+      "eng": "account",
+      "kor": "계산",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "nav": 2,
+      "eng": "account for",
+      "kor": "~를 설명하다",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "nav": 3,
+      "eng": "benefit from",
+      "kor": "~로부터 혜택을 받다",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "nav": 3,
+      "eng": "condense",
+      "kor": "압축하다",
+      "isDone": false
+    },
+    {
+      "nav": "3",
+      "eng": "condense into",
+      "kor": "~로 압축하다",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "nav": "3",
+      "eng": "better",
+      "kor": "~를 개선하다",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "nav": "2",
+      "eng": "conduct",
+      "kor": "실시, 시행하다",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "nav": "4",
+      "eng": "accrue",
+      "kor": "생기다, 얻어지다",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "nav": "3",
+      "eng": "conductor",
+      "kor": "지휘자 , 차장",
+      "isDone": false,
+      "id": 12
+    }
+  ]
 }

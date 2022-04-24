@@ -2,14 +2,35 @@ import { useState } from "react";
 
 export default function Word({ word }) {
   const [isShow, setIsShow] = useState(false);
-  const [isDone, setIsDone] = useState(false);
+  const [isDone, setIsDone] = useState(word.isDone);
 
   function toggleShow() {
     setIsShow(!isShow);
   }
 
   function toggleDone() {
-    setIsDone(!isDone);
+    fetch(`http://localhost:3003/words/${word.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...word,
+        isDone: !isDone,
+      }),
+    }).then((res) => {
+      if (res.ok) setIsDone(!isDone);
+    });
+  }
+
+  function del() {
+    if (window.confirm(`Are you sure to delete ${word.eng}?`)) {
+      fetch(`http://localhost:3003/words/${word.id}`, {
+        method: "DELETE",
+      }).then((res) => {
+        if (res.ok) window.location.reload();
+      });
+    }
   }
 
   return (
@@ -21,7 +42,9 @@ export default function Word({ word }) {
       <td>{isShow && word.kor}</td>
       <td>
         <button onClick={toggleShow}>뜻 {isShow ? "숨기기" : "확인"}</button>
-        <button className="btn_del">삭제</button>
+        <button onClick={del} className="btn_del">
+          삭제
+        </button>
       </td>
     </tr>
   );

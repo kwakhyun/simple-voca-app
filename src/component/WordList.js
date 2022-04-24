@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import useFetch from "../hook/useFetch";
 import Word from "./Word";
 
 export default function WordList() {
