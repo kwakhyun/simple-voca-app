@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-export default function Word({ word }) {
+export default function Word({ word: w }) {
+  const [word, setWord] = useState(w);
   const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(word.isDone);
 
@@ -28,10 +29,12 @@ export default function Word({ word }) {
       fetch(`http://localhost:3003/words/${word.id}`, {
         method: "DELETE",
       }).then((res) => {
-        if (res.ok) window.location.reload();
+        if (res.ok) setWord({ id: 0 });
       });
     }
   }
+
+  if (word.id === 0) return null;
 
   return (
     <tr className={isDone ? "off" : ""}>

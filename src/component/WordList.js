@@ -8,7 +8,8 @@ export default function WordList() {
 
   return (
     <>
-      <h2>Nav 0</h2>
+      <h2>메뉴 {nav}</h2>
+      {words.length === 0 && <div className="add_msg">Please add a word</div>}
       <table>
         <tbody>
           {words.map((word) => (

@@ -19,14 +19,6 @@
     {
       "nav": 5,
       "id": 5
-    },
-    {
-      "nav": 6,
-      "id": 6
-    },
-    {
-      "nav": 7,
-      "id": 7
     }
   ],
   "words": [
@@ -94,23 +86,9 @@
       "id": 12
     },
     {
-      "eng": "cat",
-      "kor": "고양이",
+      "eng": "apple",
+      "kor": "사과",
       "nav": "1",
-      "isDone": false,
-      "id": 13
-    },
-    {
-      "eng": "ㅇ",
-      "kor": "",
-      "nav": "1",
-      "isDone": false,
-      "id": 14
-    },
-    {
-      "eng": "ㅁ",
-      "kor": "ㅁ",
-      "nav": "7",
       "isDone": false,
       "id": 15
     }

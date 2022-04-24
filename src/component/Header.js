@@ -11,7 +11,7 @@ export default function Header() {
           단어 추가
         </Link>
         <Link to="/create_nav" className="link">
-          Nav 추가
+          메뉴 추가
         </Link>
       </div>
     </div>
