@@ -1,40 +1,47 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useFetch from "../hook/useFetch";
+import { INav } from "./Nav";
 
 export default function CreateWord() {
-  const navs = useFetch("http://localhost:3003/navs");
+  const navs: INav[] = useFetch("http://localhost:3003/navs");
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
-  function onSubmit(e) {
+  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!isLoading) {
+
+    if (!isLoading && engRef.current && korRef.current && navRef.current) {
       setIsLoading(true);
+
+      const eng = engRef.current.value;
+      const kor = korRef.current.value;
+      const nav = navRef.current.value;
+
       fetch("http://localhost:3003/words", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          eng: engRef.current.value,
-          kor: korRef.current.value,
-          nav: navRef.current.value,
+          eng,
+          kor,
+          nav,
           isDone: false,
         }),
       }).then((res) => {
         if (res.ok) {
           alert("단어가 저장되었습니다.");
-          navigate("/wordList/" + navRef.current.value);
+          navigate("/wordList/" + nav);
           setIsLoading(false);
         }
       });
     }
   }
 
-  const engRef = useRef(null);
-  const korRef = useRef(null);
-  const navRef = useRef(null);
+  const engRef = useRef<HTMLInputElement>(null);
+  const korRef = useRef<HTMLInputElement>(null);
+  const navRef = useRef<HTMLSelectElement>(null);
 
   return (
     <form onSubmit={onSubmit}>

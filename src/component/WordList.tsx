@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hook/useFetch";
-import Word from "./Word";
+import Word, { IWord } from "./Word";
 
 export default function WordList() {
   const { nav } = useParams();
-  const words = useFetch(`http://localhost:3003/words?nav=${nav}`);
+  const words: IWord[] = useFetch(`http://localhost:3003/words?nav=${nav}`);
 
   return (
     <>

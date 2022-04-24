@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import useFetch from "../hook/useFetch";
 
-export default function Nav() {
-  const navs = useFetch("http://localhost:3003/navs");
+export interface INav {
+  id: number;
+  nav: number;
+}
 
-  if(navs.length === 0) {
-    return <div className="add_msg">Please add a menu</div>
+export default function Nav() {
+  const navs: INav[] = useFetch("http://localhost:3003/navs");
+
+  if (navs.length === 0) {
+    return <div className="add_msg">Please add a menu</div>;
   }
 
   return (

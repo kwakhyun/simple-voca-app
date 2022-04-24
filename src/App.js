@@ -1,10 +1,10 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./component/Header";
 import Nav from "./component/Nav";
 import WordList from "./component/WordList";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Empty from "./component/Empty";
 import CreateWord from "./component/CreateWord";
 import CreateNav from "./component/CreateNav";
+import Empty from "./component/Empty";
 
 function App() {
   return (
