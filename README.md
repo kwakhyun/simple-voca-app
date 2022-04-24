@@ -1,5 +1,20 @@
 # Simple Vocabulary React App
-<p>https://kwakhyun.github.io/simple-voca-app/</p>
+
+## json-server
+
+npm install -g json-server
+
+json-server --watch ./src/db/data.json --port 3003
+
+\{^_^}/ hi!
+
+  Loading ./src/db/data.json
+  Done
+
+  Resources
+  http://localhost:3003/navs
+  http://localhost:3003/words
+
 
 이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app)으로 부트스트랩되었습니다.
 
