@@ -47,46 +47,46 @@
             "isDone": false
         },
         {
+            "id": 7,
             "nav": "3",
             "eng": "condense into",
             "kor": "~로 압축하다",
-            "isDone": false,
-            "id": 7
+            "isDone": false
         },
         {
+            "id": 8,
             "nav": "3",
             "eng": "better",
             "kor": "~를 개선하다",
-            "isDone": false,
-            "id": 8
+            "isDone": false
         },
         {
+            "id": 9,
             "nav": "2",
             "eng": "conduct",
             "kor": "실시, 시행하다",
-            "isDone": false,
-            "id": 9
+            "isDone": false
         },
         {
+            "id": 10,
             "nav": "4",
             "eng": "accrue",
             "kor": "생기다, 얻어지다",
-            "isDone": false,
-            "id": 10
+            "isDone": false
         },
         {
+            "id": 11,
             "nav": "4",
             "eng": "apple",
             "kor": "사과",
-            "isDone": false,
-            "id": 11
+            "isDone": false
         },
         {
+            "id": 12,
             "nav": "3",
             "eng": "conductor",
             "kor": "지휘자 , 차장",
-            "isDone": false,
-            "id": 12
+            "isDone": false
         }
     ]
 }

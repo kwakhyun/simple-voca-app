@@ -1,21 +1,26 @@
 import { useState } from "react";
 
 export default function Word({ word }) {
-  const { isShow, setIsShow } = useState(false);
+  const [isShow, setIsShow] = useState(false);
+  const [isDone, setIsDone] = useState(false);
 
   function toggleShow() {
     setIsShow(!isShow);
   }
 
+  function toggleDone() {
+    setIsDone(!isDone);
+  }
+
   return (
-    <tr>
+    <tr className={isDone ? "off" : ""}>
       <td>
-        <input type="checkbox" />
+        <input type="checkbox" checked={isDone} onChange={toggleDone} />
       </td>
       <td>{word.eng}</td>
       <td>{isShow && word.kor}</td>
       <td>
-        <button onClick={toggleShow}>뜻 확인</button>
+        <button onClick={toggleShow}>뜻 {isShow ? "숨기기" : "확인"}</button>
         <button className="btn_del">삭제</button>
       </td>
     </tr>
