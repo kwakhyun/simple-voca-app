@@ -7,8 +7,12 @@ export default function Header() {
         <Link to="/">SIMPLE VOCA</Link>
       </h1>
       <div className="menu">
-        <Link to="/create_word">단어 추가</Link>
-        <Link to="/create_nav">Nav 추가</Link>
+        <Link to="/create_word" className="link">
+          단어 추가
+        </Link>
+        <Link to="/create_nav" className="link">
+          Nav 추가
+        </Link>
       </div>
     </div>
   );
