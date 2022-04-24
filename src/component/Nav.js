@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useFetch from "../hook/useFetch";
 
 export default function Nav() {
-  const [navs, setNavs] = useState([]);
+  const navs = useFetch("http://localhost:3003/navs");
 
-  useEffect(() => {
-    fetch("http://localhost:3003/navs")
-      .then((res) => res.json())
-      .then((data) => setNavs(data));
-  }, []);
-  
   return (
     <ul className="nav">
       {navs.map((nav) => (

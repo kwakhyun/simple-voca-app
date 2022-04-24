@@ -1,16 +1,9 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Word from "./Word";
 
 export default function WordList() {
   const { nav } = useParams();
-  const [words, setWords] = useState([]);
-
-  useEffect(() => {
-    fetch(`http://localhost:3003/words?nav=${nav}`)
-      .then((res) => res.json())
-      .then((data) => setWords(data));
-  }, []);
+  const words = useFetch(`http://localhost:3003/words?nav=${nav}`);
 
   return (
     <>
