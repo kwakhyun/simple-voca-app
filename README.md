@@ -1,16 +1,23 @@
-# Simple Vocabulary React App
+## Simple Vocabulary React App
 
-## json-server
+### json-server
 
-### `npm install -g json-server`
+`npm install -g json-server`
 
-### `json-server --watch ./src/db/data.json --port 3003`
+```
+json-server --watch ./src/db/data.json --port 3003
 
-<p>\{^_^}/ hi!</p><br>
-<p>Loading ./src/db/data.json</p>
-<p>Done</p><br>
-<p>Resources</p>
-<p>http://localhost:3003/navs</p>
-<p>http://localhost:3003/words</p><br>
+\{^_^}/ hi!
 
-이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app)으로 부트스트랩되었습니다.
+Loading ./src/db/data.json
+Done
+
+Resources
+http://localhost:3003/navs
+http://localhost:3003/words
+
+Home
+http://localhost:3003
+```
+
+https://user-images.githubusercontent.com/73919235/186010579-823ead40-0360-4724-9d8e-86b03ef504a9.mp4

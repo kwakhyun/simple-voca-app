@@ -34,7 +34,7 @@
       "nav": 2,
       "eng": "account for",
       "kor": "~를 설명하다",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 5,
@@ -61,7 +61,7 @@
       "nav": "3",
       "eng": "better",
       "kor": "~를 개선하다",
-      "isDone": false,
+      "isDone": true,
       "id": 8
     },
     {
@@ -77,13 +77,6 @@
       "kor": "생기다, 얻어지다",
       "isDone": false,
       "id": 10
-    },
-    {
-      "nav": "3",
-      "eng": "conductor",
-      "kor": "지휘자 , 차장",
-      "isDone": false,
-      "id": 12
     },
     {
       "eng": "apple",
