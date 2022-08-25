@@ -14,9 +14,7 @@
 
 https://user-images.githubusercontent.com/73919235/186010579-823ead40-0360-4724-9d8e-86b03ef504a9.mp4
 
-### json-server
-
-`npm install -g json-server`
+### `Use mock api`
 
 ```
 json-server --watch ./src/db/data.json --port 3003
